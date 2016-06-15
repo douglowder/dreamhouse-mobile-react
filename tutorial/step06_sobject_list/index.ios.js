@@ -1,6 +1,8 @@
 'use strict';
 
-import React, {
+import React from 'react';
+
+import ReactNative, {
     AppRegistry,
     Text,
     View,
@@ -8,4 +10,4 @@ import React, {
 
 import App from './app';
 
-React.AppRegistry.registerComponent('dreamhouse', () => App);
+ReactNative.AppRegistry.registerComponent('dreamhouse', () => App);
