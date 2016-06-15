@@ -8,6 +8,12 @@
 2. we need your feedback
 3. not production-ready 
 
+### Tutorial
+
+![iOS Screenshot](/tutorial_video/README_files/video2.png?raw=true)
+
+Step-by-step tutorial for this project can be found [HERE](/tutorial/)
+
 ### Org and Data setup:
 
 Follow installation instructions at [dreamhouse micro-site](http://dreamhouse-site.herokuapp.com/installation/)
