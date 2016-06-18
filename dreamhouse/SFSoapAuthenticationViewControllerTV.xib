@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SFSoapAuthenticationViewController">
+            <connections>
+                <outlet property="passwordField" destination="ZHR-qM-ddN" id="ptk-DK-xOG"/>
+                <outlet property="passwordLabel" destination="hJo-EF-sBP" id="Lvq-Ch-ANv"/>
+                <outlet property="submitButton" destination="cgy-zq-Lg2" id="sMB-sJ-39a"/>
+                <outlet property="usernameField" destination="wk9-6h-1lc" id="S8v-ah-JXs"/>
+                <outlet property="usernameLabel" destination="rGq-xp-2iq" id="7Oc-rf-jcn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="36" translatesAutoresizingMaskIntoConstraints="NO" id="wk9-6h-1lc">
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="go"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGq-xp-2iq">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="rLp-u1-g3u"/>
+                        <constraint firstAttribute="height" constant="21" id="wsS-3O-LZa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJo-EF-sBP">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Gja-Jb-WYj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SalesforceLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ckw-u8-3jK">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="Cdq-S5-eeE"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgy-zq-Lg2">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="490" id="KDY-r8-3Y7"/>
+                        <constraint firstAttribute="height" constant="91" id="exz-kt-7uA"/>
+                    </constraints>
+                    <state key="normal" title="Log In"/>
+                    <connections>
+                        <action selector="submitButtonPressed:" destination="-1" eventType="primaryActionTriggered" id="o1B-DV-roV"/>
+                        <action selector="submitButtonPressed:" destination="-1" eventType="touchUpInside" id="rvb-Gj-dhf"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="36" translatesAutoresizingMaskIntoConstraints="NO" id="ZHR-qM-ddN">
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wk9-6h-1lc" firstAttribute="top" secondItem="rGq-xp-2iq" secondAttribute="bottom" constant="8" symbolic="YES" id="2TO-sa-K1X"/>
+                <constraint firstItem="ckw-u8-3jK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="23" id="8Dq-oP-foF"/>
+                <constraint firstItem="rGq-xp-2iq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="AJj-VX-vP6"/>
+                <constraint firstItem="rGq-xp-2iq" firstAttribute="trailing" secondItem="hJo-EF-sBP" secondAttribute="trailing" id="Cdj-JD-7pm"/>
+                <constraint firstAttribute="trailing" secondItem="ZHR-qM-ddN" secondAttribute="trailing" constant="12" id="EBI-Q3-dfN"/>
+                <constraint firstItem="ckw-u8-3jK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NxX-Nq-lWT"/>
+                <constraint firstItem="rGq-xp-2iq" firstAttribute="leading" secondItem="wk9-6h-1lc" secondAttribute="leading" id="OFx-b2-B9c"/>
+                <constraint firstItem="ckw-u8-3jK" firstAttribute="centerX" secondItem="wk9-6h-1lc" secondAttribute="centerX" id="QYf-2V-JJA"/>
+                <constraint firstAttribute="bottom" secondItem="cgy-zq-Lg2" secondAttribute="bottom" constant="150" id="X56-sd-rV8"/>
+                <constraint firstItem="hJo-EF-sBP" firstAttribute="top" secondItem="wk9-6h-1lc" secondAttribute="bottom" constant="52" id="aPJ-QM-tfA"/>
+                <constraint firstItem="ckw-u8-3jK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="b49-hs-rmP"/>
+                <constraint firstAttribute="bottom" secondItem="ZHR-qM-ddN" secondAttribute="bottom" constant="412" id="eX5-gI-S7e"/>
+                <constraint firstItem="wk9-6h-1lc" firstAttribute="leading" secondItem="hJo-EF-sBP" secondAttribute="leading" id="kYV-WO-W2e"/>
+                <constraint firstItem="wk9-6h-1lc" firstAttribute="centerX" secondItem="cgy-zq-Lg2" secondAttribute="centerX" id="lCe-bf-B3I"/>
+                <constraint firstItem="ZHR-qM-ddN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="oRj-1J-4cH"/>
+                <constraint firstItem="rGq-xp-2iq" firstAttribute="top" secondItem="ckw-u8-3jK" secondAttribute="bottom" constant="33" id="tie-rX-GED"/>
+            </constraints>
+            <point key="canvasLocation" x="94" y="82"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SalesforceLogo" width="360" height="226"/>
+    </resources>
+</document>

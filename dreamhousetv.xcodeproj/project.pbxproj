@@ -13,6 +13,8 @@
 		05DF20971CECD85D00D48CFC /* libDesignSystemReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA61F5B7283A4F07B11D5C56 /* libDesignSystemReactNative.a */; };
 		05DF20991CECD85D00D48CFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F8D5EAD1B6C0568005E64D4 /* Images.xcassets */; };
 		05F7BE311CF4014A00057E91 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05F7BE301CF4014A00057E91 /* logo.png */; };
+		2D83F8B81D1460EB00005100 /* SFSoapAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D83F8B61D1460EB00005100 /* SFSoapAuthenticationViewController.m */; };
+		2D83F8BE1D14619400005100 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2D83F8BD1D14619400005100 /* Settings.bundle */; };
 		2DADF5321CF678ED00321AD1 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DADF5311CF678ED00321AD1 /* libc++.tbd */; };
 		2DC782E61D0224FF00E87A30 /* SalesforceDesignSystemIconsAction.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC782DF1D0224FF00E87A30 /* SalesforceDesignSystemIconsAction.ttf */; };
 		2DC782E71D0224FF00E87A30 /* SalesforceDesignSystemIconsCustom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC782E01D0224FF00E87A30 /* SalesforceDesignSystemIconsCustom.ttf */; };
@@ -21,6 +23,7 @@
 		2DC782EA1D0224FF00E87A30 /* SalesforceSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC782E31D0224FF00E87A30 /* SalesforceSans-Bold.ttf */; };
 		2DC782EB1D0224FF00E87A30 /* SalesforceSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC782E41D0224FF00E87A30 /* SalesforceSans-Light.ttf */; };
 		2DC782EC1D0224FF00E87A30 /* SalesforceSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC782E51D0224FF00E87A30 /* SalesforceSans-Regular.ttf */; };
+		2DE1549A1D15178500590A64 /* SFSoapAuthenticationViewControllerTV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE154991D15178500590A64 /* SFSoapAuthenticationViewControllerTV.xib */; };
 		2DE8C6641D06045A00009D09 /* libSalesforceBaseTheme.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1D2D131D024BB40065E725 /* libSalesforceBaseTheme.a */; };
 		4F8D5EA31B6C0568005E64D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8D5EA21B6C0568005E64D4 /* main.m */; };
 		4F8D5EA61B6C0568005E64D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8D5EA51B6C0568005E64D4 /* AppDelegate.m */; };
@@ -44,6 +47,9 @@
 		05F7BE301CF4014A00057E91 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		157C71EC55C9D21B27A82E72 /* Pods-dreamhouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamhouse.release.xcconfig"; path = "Pods/Target Support Files/Pods-dreamhouse/Pods-dreamhouse.release.xcconfig"; sourceTree = "<group>"; };
 		2D1D2D0E1D024BB40065E725 /* SalesforceBaseThemeTV.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SalesforceBaseThemeTV.xcodeproj; path = node_modules/react.force.base.theme/ios/SalesforceBaseTheme/SalesforceBaseThemeTV.xcodeproj; sourceTree = "<group>"; };
+		2D83F8B51D1460EB00005100 /* SFSoapAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSoapAuthenticationViewController.h; sourceTree = "<group>"; };
+		2D83F8B61D1460EB00005100 /* SFSoapAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSoapAuthenticationViewController.m; sourceTree = "<group>"; };
+		2D83F8BD1D14619400005100 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2DADF5311CF678ED00321AD1 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		2DC782DF1D0224FF00E87A30 /* SalesforceDesignSystemIconsAction.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SalesforceDesignSystemIconsAction.ttf; path = node_modules/react.force.base.theme/Fonts/SalesforceDesignSystemIconsAction.ttf; sourceTree = "<group>"; };
 		2DC782E01D0224FF00E87A30 /* SalesforceDesignSystemIconsCustom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SalesforceDesignSystemIconsCustom.ttf; path = node_modules/react.force.base.theme/Fonts/SalesforceDesignSystemIconsCustom.ttf; sourceTree = "<group>"; };
@@ -52,6 +58,7 @@
 		2DC782E31D0224FF00E87A30 /* SalesforceSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SalesforceSans-Bold.ttf"; path = "node_modules/react.force.base.theme/Fonts/SalesforceSans-Bold.ttf"; sourceTree = "<group>"; };
 		2DC782E41D0224FF00E87A30 /* SalesforceSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SalesforceSans-Light.ttf"; path = "node_modules/react.force.base.theme/Fonts/SalesforceSans-Light.ttf"; sourceTree = "<group>"; };
 		2DC782E51D0224FF00E87A30 /* SalesforceSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SalesforceSans-Regular.ttf"; path = "node_modules/react.force.base.theme/Fonts/SalesforceSans-Regular.ttf"; sourceTree = "<group>"; };
+		2DE154991D15178500590A64 /* SFSoapAuthenticationViewControllerTV.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFSoapAuthenticationViewControllerTV.xib; sourceTree = "<group>"; };
 		4F8D5E9D1B6C0568005E64D4 /* dreamhouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dreamhouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8D5EA11B6C0568005E64D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F8D5EA21B6C0568005E64D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,6 +143,7 @@
 		4F8D5EA01B6C0568005E64D4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2D83F8BD1D14619400005100 /* Settings.bundle */,
 				4F8D5EAD1B6C0568005E64D4 /* Images.xcassets */,
 				4F8D5EA11B6C0568005E64D4 /* Info.plist */,
 				4F8D5EA21B6C0568005E64D4 /* main.m */,
@@ -150,6 +158,9 @@
 				4F8D5EC71B6C0F94005E64D4 /* InitialViewController.m */,
 				4F8D5EA41B6C0568005E64D4 /* AppDelegate.h */,
 				4F8D5EA51B6C0568005E64D4 /* AppDelegate.m */,
+				2D83F8B51D1460EB00005100 /* SFSoapAuthenticationViewController.h */,
+				2D83F8B61D1460EB00005100 /* SFSoapAuthenticationViewController.m */,
+				2DE154991D15178500590A64 /* SFSoapAuthenticationViewControllerTV.xib */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -301,8 +312,10 @@
 			files = (
 				4F8D5EAE1B6C0568005E64D4 /* Images.xcassets in Resources */,
 				05F7BE311CF4014A00057E91 /* logo.png in Resources */,
+				2DE1549A1D15178500590A64 /* SFSoapAuthenticationViewControllerTV.xib in Resources */,
 				2DC782E91D0224FF00E87A30 /* SalesforceDesignSystemIconsUtility.ttf in Resources */,
 				2DC782E81D0224FF00E87A30 /* SalesforceDesignSystemIconsStandard.ttf in Resources */,
+				2D83F8BE1D14619400005100 /* Settings.bundle in Resources */,
 				2DC782EA1D0224FF00E87A30 /* SalesforceSans-Bold.ttf in Resources */,
 				2DC782EC1D0224FF00E87A30 /* SalesforceSans-Regular.ttf in Resources */,
 				2DC782EB1D0224FF00E87A30 /* SalesforceSans-Light.ttf in Resources */,
@@ -391,6 +404,7 @@
 			files = (
 				4F8D5EA61B6C0568005E64D4 /* AppDelegate.m in Sources */,
 				4F8D5EA31B6C0568005E64D4 /* main.m in Sources */,
+				2D83F8B81D1460EB00005100 /* SFSoapAuthenticationViewController.m in Sources */,
 				4F8D5EC81B6C0F94005E64D4 /* InitialViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

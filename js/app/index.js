@@ -148,6 +148,7 @@ module.exports = React.createClass({
            {this.renderTabBarItem("propertyList","Properties")}
            {this.renderTabBarItem("brokerList","Brokers")}
            {this.renderTabBarItem("favoriteList","Favorites")}
+           {this.renderTabBarItem("settings","Settings")}
          </TabBarIOS> 
         {this.router(this.state.route,this)}
        </View>
