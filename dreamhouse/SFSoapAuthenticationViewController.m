@@ -91,20 +91,42 @@ static NSString * const kPreviousUsernamePreference = @"previoususername_prefere
         self.usernameField.text = [defaults valueForKey:kPreviousUsernamePreference];
     }
 
+#if TARGET_OS_TV
+    CGFloat fieldFontSize = 36.0;
+    CGFloat labelFontSize = 24.0;
+#else
+    CGFloat fieldFontSize = 12.0;
+    CGFloat labelFontSize = 10.0;
+#endif
+    
+    // Lightning Design System styling for the view
+    UIColor *sfBlueColor = [UIColor colorWithRed:0.0 green:112.0/255.0 blue:210.0/255.0 alpha:1.0];
+    UIColor *sfGreyColor = [UIColor colorWithRed:200.0/255.0 green:200.0/255.0 blue:200.0/255.0 alpha:1.0];
+    
+    self.usernameField.font = [UIFont fontWithName:@"SalesforceSans-Regular" size:fieldFontSize];
+    self.usernameField.minimumFontSize = fieldFontSize;
+    self.usernameField.layer.borderColor = [sfBlueColor CGColor];
+    
+    self.usernameLabel.font = [UIFont fontWithName:@"SalesforceSans-Regular" size:labelFontSize];
+
+    self.passwordField.font = [UIFont fontWithName:@"SalesforceSans-Regular" size:fieldFontSize];
+    self.passwordField.minimumFontSize = fieldFontSize;
+    self.passwordField.layer.borderColor = [sfBlueColor CGColor];
+    
+    self.passwordLabel.font = [UIFont fontWithName:@"SalesforceSans-Regular" size:labelFontSize];
+    
+#if TARGET_OS_TV
+    //self.usernameField.backgroundColor = sfGreyColor;
+    //self.passwordField.backgroundColor = sfGreyColor;
+#endif
     
 #if !TARGET_OS_TV
-    // Lightning Design System styling for the view
-    
-    self.usernameField.font = [UIFont fontWithName:@"SalesforceSans-Regular" size:12.0];
-    self.usernameLabel.font = [UIFont fontWithName:@"SalesforceSans-Regular" size:10.0];
-
-    self.passwordField.font = [UIFont fontWithName:@"SalesforceSans-Regular" size:12.0];
-    self.passwordLabel.font = [UIFont fontWithName:@"SalesforceSans-Regular" size:10.0];
+    self.submitButton.font = [UIFont fontWithName:@"SalesforceSans-Regular" size:labelFontSize];
+#endif
     
     self.submitButton.backgroundColor = [UIColor colorWithRed:0.0 green:112.0/255.0 blue:210.0/255.0 alpha:1.0];
     self.submitButton.tintColor = [UIColor whiteColor];
     self.submitButton.layer.cornerRadius = 5.0;
-#endif
 
     
 }
