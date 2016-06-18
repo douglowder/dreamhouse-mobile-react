@@ -18,7 +18,7 @@
     "step12": "node_modules/react-native/packager/packager.sh --root tutorial/step12_sobject_detail_pull_to_refresh"
   },
   "dependencies": {
-    "react": "15.1.0",
+    "react": "~15.2.0-rc.1",
     "react-native": "https://github.com/douglowder/react-native-appletv.git#master",
     "react-native-side-menu": "^0.19.0",
     "react.force": "https://github.com/douglowder/react.force.git",
