@@ -23,6 +23,8 @@
 		2D83F8B21D13A21900005100 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2D83F8B11D13A21900005100 /* Settings.bundle */; };
 		2DC04F941D11F01C00950709 /* SFSoapAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC04F921D11F01C00950709 /* SFSoapAuthenticationViewController.m */; };
 		2DC04F951D11F01C00950709 /* SFSoapAuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC04F931D11F01C00950709 /* SFSoapAuthenticationViewController.xib */; };
+		2DFA54D11D15E55A0011B347 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFA54D01D15E55A0011B347 /* libc++.tbd */; };
+		2DFA54D41D15E5900011B347 /* dreamhouse copy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA54D31D15E5900011B347 /* dreamhouse copy-Info.plist */; };
 		319016D963754A0781ADBB03 /* SalesforceSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D695F6FCD7649FF83058D42 /* SalesforceSans-Regular.ttf */; };
 		44062F4DEE7B494EBEB88AB8 /* SalesforceSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB7429758EC40B2A9370F52 /* SalesforceSans-Bold.ttf */; };
 		4BFF499CB7CD47DBB6B504C1 /* SalesforceSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05CED4EADC74493F93525DFF /* SalesforceSans-Light.ttf */; };
@@ -51,7 +53,6 @@
 /* Begin PBXFileReference section */
 		05CED4EADC74493F93525DFF /* SalesforceSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SalesforceSans-Light.ttf"; path = "node_modules/react.force.base.theme/Fonts/SalesforceSans-Light.ttf"; sourceTree = "<group>"; };
 		05DF20A61CECD85D00D48CFC /* dreamhouse copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dreamhouse copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		05DF20A71CECD85D00D48CFC /* dreamhouse copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "dreamhouse copy-Info.plist"; path = "/Users/ibogdanov/msdkdev/dreamhouse/dreamhouse copy-Info.plist"; sourceTree = "<absolute>"; };
 		05F7BE301CF4014A00057E91 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		116641095FE74BB0A4536A3D /* SalesforceBaseTheme.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = SalesforceBaseTheme.xcodeproj; path = node_modules/react.force.base.theme/ios/SalesforceBaseTheme/SalesforceBaseTheme.xcodeproj; sourceTree = "<group>"; };
 		28EBFEB5239446C596705EEF /* SalesforceDesignSystemIconsStandard.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SalesforceDesignSystemIconsStandard.ttf; path = node_modules/react.force.base.theme/Fonts/SalesforceDesignSystemIconsStandard.ttf; sourceTree = "<group>"; };
@@ -59,6 +60,8 @@
 		2DC04F911D11F01C00950709 /* SFSoapAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSoapAuthenticationViewController.h; sourceTree = "<group>"; };
 		2DC04F921D11F01C00950709 /* SFSoapAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSoapAuthenticationViewController.m; sourceTree = "<group>"; };
 		2DC04F931D11F01C00950709 /* SFSoapAuthenticationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFSoapAuthenticationViewController.xib; sourceTree = "<group>"; };
+		2DFA54D01D15E55A0011B347 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		2DFA54D31D15E5900011B347 /* dreamhouse copy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "dreamhouse copy-Info.plist"; sourceTree = "<group>"; };
 		3D9FA5C6EB9D4B9185D99A94 /* SalesforceDesignSystemIconsCustom.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SalesforceDesignSystemIconsCustom.ttf; path = node_modules/react.force.base.theme/Fonts/SalesforceDesignSystemIconsCustom.ttf; sourceTree = "<group>"; };
 		41BFD7004C18C13C2900A603 /* libPods-dreamhouse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dreamhouse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4834ACB14DDD4B5A98AD0B47 /* libSalesforceBaseTheme.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libSalesforceBaseTheme.a; sourceTree = "<group>"; };
@@ -91,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFA54D11D15E55A0011B347 /* libc++.tbd in Frameworks */,
 				86B30DF90877446ABB7D35C1 /* libSalesforceBaseTheme.a in Frameworks */,
 				739D98FF68E86A3D211DD254 /* libPods-dreamhouse.a in Frameworks */,
 			);
@@ -122,7 +126,7 @@
 				4F8D5E9E1B6C0568005E64D4 /* Products */,
 				746047FD40DE4DEF81D36853 /* Libraries */,
 				799288BF02274A06900D14E7 /* Resources */,
-				05DF20A71CECD85D00D48CFC /* dreamhouse copy-Info.plist */,
+				2DFA54D31D15E5900011B347 /* dreamhouse copy-Info.plist */,
 				A93B64C15FA23A424D95AAAD /* Pods */,
 				DC3A8F00485E7A8BFF240F96 /* Frameworks */,
 			);
@@ -206,6 +210,7 @@
 		DC3A8F00485E7A8BFF240F96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2DFA54D01D15E55A0011B347 /* libc++.tbd */,
 				41BFD7004C18C13C2900A603 /* libPods-dreamhouse.a */,
 			);
 			name = Frameworks;
@@ -331,6 +336,7 @@
 				44062F4DEE7B494EBEB88AB8 /* SalesforceSans-Bold.ttf in Resources */,
 				4BFF499CB7CD47DBB6B504C1 /* SalesforceSans-Light.ttf in Resources */,
 				2DC04F951D11F01C00950709 /* SFSoapAuthenticationViewController.xib in Resources */,
+				2DFA54D41D15E5900011B347 /* dreamhouse copy-Info.plist in Resources */,
 				2D83F8B21D13A21900005100 /* Settings.bundle in Resources */,
 				319016D963754A0781ADBB03 /* SalesforceSans-Regular.ttf in Resources */,
 			);
