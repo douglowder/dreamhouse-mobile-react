@@ -1,8 +1,9 @@
 ## React Native and MobileSDK: step-by-step tutorial
 
-Info about video version of this tutorial can be found [HERE](/tutorial_video/README.md)
+[Video version of this tutorial: ](https://www.youtube.com/watch?v=RY2vn2bT6XU)
 
-![iOS Screenshot](/tutorial_video/README_files/video2.png?raw=true)
+[![iOS Screenshot](/tutorial_video/README_files/video2.png?raw=true)](https://www.youtube.com/watch?v=RY2vn2bT6XU)
+
 
 ### Goal
 
@@ -19,4 +20,8 @@ Follow installation instructions at [dreamhouse micro-site](http://dreamhouse-si
 * Step 1: [Initial Setup and dependencies](/tutorial/step01_cleanup_and_dependencies/)
 
 * Step 2: [Adding Touch handler](/tutorial/step02_touch_handler/)
+
+* Step 3: [Adding Navigator](/tutorial/step03_navigator/)
+
+* Step 4: [Working with Navigator Router](/tutorial/step04_navigator_routing/)
 
