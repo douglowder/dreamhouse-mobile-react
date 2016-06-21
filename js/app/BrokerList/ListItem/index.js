@@ -71,7 +71,7 @@ module.exports = React.createClass({
       const title = this.context.sobj.Name;
       const detail = this.context.sobj['Title__c']?this.context.sobj['Title__c']:' ';
       return (
-        <TouchableOpacity onPress={this.handlePress}>
+        <TouchableOpacity onPress={this.handlePress} style={styles.container}>
           <Theme.Tiles.List 
             title={title} 
             detail={detail}

@@ -100,7 +100,7 @@ module.exports = React.createClass({
       const title = this.getTitle();
       const detail = this.getDetail();
       return (
-          <TouchableOpacity onPress={this.handlePress}>
+          <TouchableOpacity onPress={this.handlePress} style={styles.container}>
           <Theme.Tiles.List 
             title={title} 
             detail={detail}

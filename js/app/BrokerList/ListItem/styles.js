@@ -30,8 +30,7 @@ import ReactNative from 'react-native';
 
 module.exports = ReactNative.StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: 'white',
+        width: __APPLETV__ ? 800 : undefined
     },
     header: {
         height: __APPLETV__ ? 400 : 50,
