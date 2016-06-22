@@ -4,13 +4,19 @@
 
 Data Containers introduction and RelevantItems component.
 
+***
+
+##### Video: [Step5](https://youtu.be/RY2vn2bT6XU?t=904)
+
+***
+
 ##### Before getting started
 
-If you are building your app from scratch: [Step4](/tutorial/step04_navigator_routing/) needs to be completed.
+If you are building your app from scratch: [Step 4](/tutorial/step04_navigator_routing/) needs to be completed.
 
 OR
 
-If you just want to practice this step: you can start editing [Step4 components](/tutorial/step04_navigator_routing/) in this repo and run
+If you just want to practice this step: you can start editing [Step 4 components](/tutorial/step04_navigator_routing/) in this repo and run
 
 ```
 
@@ -22,7 +28,7 @@ npm run step4
 
 ##### 1. Create file [app/BrokerList/List/index.js](/tutorial/step05_relevant_items/app/BrokerList/List/index.js):
 
-```html
+```js
 
 import React, {
   ListView,
@@ -80,7 +86,7 @@ module.exports = {
 
 ##### 3. Create file [app/BrokerList/index.js](/tutorial/step05_relevant_items/app/BrokerList/index.js):
 
-```html
+```js
 
 import React, {
   Text,
@@ -127,7 +133,10 @@ module.exports = {
 
 ##### 5. Modify file [app/index.js](/tutorial/step05_relevant_items/app/index.js):
 
-```html 
+1. import `BrokerList`
+2. modify `renderScene` to render `<BrokerList />`
+
+```js 
 
 import React, {
   Text,
@@ -142,7 +151,7 @@ import BrokerList from './BrokerList';
 
 module.exports = React.createClass({
   renderScene(route,navigator){
-    return <BrokerList navigator={navigator} route={route} />; /* <-- Modify this line */
+    return <BrokerList navigator={navigator} route={route} />;
   },
   render() {
     return (
