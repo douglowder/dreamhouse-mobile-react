@@ -17,54 +17,10 @@
 #import <SalesforceSDKCore/SFUserAccountManager.h>
 
 #import "AppDelegate.h"
+#import "AuthenticationPersistenceUtils.h"
+#import "AppConstants.h"
 
-static NSString * const RemoteAccessConsumerKey = @"3MVG9Iu66FKeHhINkB1l7xt7kR8czFcCTUhgoA8Ol2Ltf1eYHOU4SqQRSEitYFDUpqRWcoQ2.dBv_a1Dyu5xa";
-static NSString * const OAuthRedirectURI        = @"testsfdc:///mobilesdk/detect/oauth/done";
 
-static NSString * const kSaveUserPreference = @"saveuser_preference";
-static NSString * const kSecurityTokenPreference = @"securitytoken_preference";
-static NSString * const kPreviousUsernamePreference = @"previoususername_preference";
-
-#pragma mark -
-#pragma mark Category to override SFAuthenticationManager login code
-
-@interface SFAuthenticationManager(SoapAuthentication)
-
-- (BOOL)loginWithCompletion:(SFOAuthFlowSuccessCallbackBlock)completionBlock failure:(SFOAuthFlowFailureCallbackBlock)failureBlock;
-
-@end
-
-@implementation SFAuthenticationManager(SoapAuthentication)
-
-- (BOOL)loginWithCompletion:(SFOAuthFlowSuccessCallbackBlock)completionBlock failure:(SFOAuthFlowFailureCallbackBlock)failureBlock {
-    
-    if (![NSThread isMainThread]) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self loginWithCompletion:completionBlock failure:failureBlock];
-        });
-        return YES;
-    }
-
-#if TARGET_OS_TV
-    SFSoapAuthenticationViewController *vc = [[SFSoapAuthenticationViewController alloc] initWithNibName:@"SFSoapAuthenticationViewControllerTV" bundle:nil];
-#else
-    SFSoapAuthenticationViewController *vc = [[SFSoapAuthenticationViewController alloc] initWithNibName:@"SFSoapAuthenticationViewController" bundle:nil];
-#endif
-    
-    vc.completionBlock = completionBlock;
-    vc.failureBlock = failureBlock;
-    
-    
-    
-    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    appDelegate.window.rootViewController = vc;
-    [appDelegate.window makeKeyAndVisible];
-    
-    return YES;
-    
-}
-
-@end
 
 #pragma mark -
 #pragma mark SOAP login view controller
@@ -214,36 +170,29 @@ static NSString * const kPreviousUsernamePreference = @"previoususername_prefere
                                    [self handleError:nil withInfo:info];
                                }
                                
-                               NSString *instanceUrl = [self contentOfXMLTag:@"serverUrl" inXMLString:responseData];
+                               NSString *instanceUrlString = [self contentOfXMLTag:@"serverUrl" inXMLString:responseData];
                                
-                               if(!instanceUrl) {
+                               if(!instanceUrlString) {
                                    [self handleError:nil withInfo:info];
                                }
                                
-                               NSRange range = [instanceUrl rangeOfString:@"services"];
-                               instanceUrl = [instanceUrl substringToIndex:range.location];
+                               NSRange range = [instanceUrlString rangeOfString:@"services"];
+                               instanceUrlString = [instanceUrlString substringToIndex:range.location];
                                
                                NSString *organizationId = [self contentOfXMLTag:@"organizationId" inXMLString:responseData];
                                
                                NSString *userId = [self contentOfXMLTag:@"userId" inXMLString:responseData];
                                
-                               SFUserAccount *user = [SFUserAccount new];
-                               user.credentials = [[SFOAuthCredentials alloc] initWithIdentifier:@"dreamhouse"
-                                                                                        clientId:RemoteAccessConsumerKey
-                                                                                       encrypted:NO
-                                                                                     storageType:SFOAuthCredentialsStorageTypeNone];
                                
-                               user.credentials.accessToken = accessToken;
-                               user.credentials.userId = userId;
-                               user.credentials.organizationId = organizationId;
-                               user.credentials.instanceUrl = [NSURL URLWithString:instanceUrl];
+                               SFOAuthCredentials *credentials = [AuthenticationPersistenceUtils
+                                                                  createCredentialsWithAccessToken:accessToken
+                                                                  andUserId:userId
+                                                                  andOrganizationId:organizationId
+                                                                  andInstanceURLString:instanceUrlString];
                                
+                               [AuthenticationPersistenceUtils saveCredentials:credentials];
                                
-                               SFOAuthCoordinator *newRestApiCoord = [[SFOAuthCoordinator alloc] initWithCredentials:user.credentials];
-                               newRestApiCoord.delegate = [SFAuthenticationManager sharedManager];
-                               
-                               [SFUserAccountManager sharedInstance].currentUser = user;
-                               [[SFRestAPI sharedInstance] setCoordinator:newRestApiCoord];
+                               [AuthenticationPersistenceUtils initializeAppWithCredentials:credentials];
                                
                                self.completionBlock(info);
                            }];

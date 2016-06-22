@@ -21,6 +21,9 @@
 		05DF20991CECD85D00D48CFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F8D5EAD1B6C0568005E64D4 /* Images.xcassets */; };
 		05F7BE311CF4014A00057E91 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05F7BE301CF4014A00057E91 /* logo.png */; };
 		2D83F8B21D13A21900005100 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2D83F8B11D13A21900005100 /* Settings.bundle */; };
+		2DB21DC21D1B0B43003F65E6 /* AuthenticationPersistenceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB21DC11D1B0B43003F65E6 /* AuthenticationPersistenceUtils.m */; };
+		2DB21DC61D1B0EB4003F65E6 /* SFAuthenticationManager+SoapAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB21DC51D1B0EB4003F65E6 /* SFAuthenticationManager+SoapAuthentication.m */; };
+		2DB21DC91D1B0F00003F65E6 /* AppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB21DC81D1B0F00003F65E6 /* AppConstants.m */; };
 		2DC04F941D11F01C00950709 /* SFSoapAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC04F921D11F01C00950709 /* SFSoapAuthenticationViewController.m */; };
 		2DC04F951D11F01C00950709 /* SFSoapAuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC04F931D11F01C00950709 /* SFSoapAuthenticationViewController.xib */; };
 		2DFA54D11D15E55A0011B347 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFA54D01D15E55A0011B347 /* libc++.tbd */; };
@@ -57,6 +60,12 @@
 		116641095FE74BB0A4536A3D /* SalesforceBaseTheme.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = SalesforceBaseTheme.xcodeproj; path = node_modules/react.force.base.theme/ios/SalesforceBaseTheme/SalesforceBaseTheme.xcodeproj; sourceTree = "<group>"; };
 		28EBFEB5239446C596705EEF /* SalesforceDesignSystemIconsStandard.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SalesforceDesignSystemIconsStandard.ttf; path = node_modules/react.force.base.theme/Fonts/SalesforceDesignSystemIconsStandard.ttf; sourceTree = "<group>"; };
 		2D83F8B11D13A21900005100 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		2DB21DC01D1B0B43003F65E6 /* AuthenticationPersistenceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationPersistenceUtils.h; sourceTree = "<group>"; };
+		2DB21DC11D1B0B43003F65E6 /* AuthenticationPersistenceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationPersistenceUtils.m; sourceTree = "<group>"; };
+		2DB21DC41D1B0EB4003F65E6 /* SFAuthenticationManager+SoapAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFAuthenticationManager+SoapAuthentication.h"; sourceTree = "<group>"; };
+		2DB21DC51D1B0EB4003F65E6 /* SFAuthenticationManager+SoapAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SFAuthenticationManager+SoapAuthentication.m"; sourceTree = "<group>"; };
+		2DB21DC71D1B0F00003F65E6 /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
+		2DB21DC81D1B0F00003F65E6 /* AppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConstants.m; sourceTree = "<group>"; };
 		2DC04F911D11F01C00950709 /* SFSoapAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSoapAuthenticationViewController.h; sourceTree = "<group>"; };
 		2DC04F921D11F01C00950709 /* SFSoapAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSoapAuthenticationViewController.m; sourceTree = "<group>"; };
 		2DC04F931D11F01C00950709 /* SFSoapAuthenticationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFSoapAuthenticationViewController.xib; sourceTree = "<group>"; };
@@ -171,6 +180,12 @@
 				2DC04F911D11F01C00950709 /* SFSoapAuthenticationViewController.h */,
 				2DC04F921D11F01C00950709 /* SFSoapAuthenticationViewController.m */,
 				2DC04F931D11F01C00950709 /* SFSoapAuthenticationViewController.xib */,
+				2DB21DC01D1B0B43003F65E6 /* AuthenticationPersistenceUtils.h */,
+				2DB21DC11D1B0B43003F65E6 /* AuthenticationPersistenceUtils.m */,
+				2DB21DC41D1B0EB4003F65E6 /* SFAuthenticationManager+SoapAuthentication.h */,
+				2DB21DC51D1B0EB4003F65E6 /* SFAuthenticationManager+SoapAuthentication.m */,
+				2DB21DC71D1B0F00003F65E6 /* AppConstants.h */,
+				2DB21DC81D1B0F00003F65E6 /* AppConstants.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -435,7 +450,10 @@
 			files = (
 				4F8D5EA61B6C0568005E64D4 /* AppDelegate.m in Sources */,
 				4F8D5EA31B6C0568005E64D4 /* main.m in Sources */,
+				2DB21DC91D1B0F00003F65E6 /* AppConstants.m in Sources */,
 				2DC04F941D11F01C00950709 /* SFSoapAuthenticationViewController.m in Sources */,
+				2DB21DC61D1B0EB4003F65E6 /* SFAuthenticationManager+SoapAuthentication.m in Sources */,
+				2DB21DC21D1B0B43003F65E6 /* AuthenticationPersistenceUtils.m in Sources */,
 				4F8D5EC81B6C0F94005E64D4 /* InitialViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
