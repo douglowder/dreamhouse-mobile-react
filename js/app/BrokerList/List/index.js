@@ -41,9 +41,10 @@ import BrokerListItem from '../ListItem';
 
 var styles = ReactNative.StyleSheet.create({
   list: {
-    justifyContent: 'flex-start',
+    justifyContent: 'space-around',
     flexDirection: 'row',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    alignItems: 'flex-start'
   }
 });
 

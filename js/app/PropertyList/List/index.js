@@ -44,9 +44,10 @@ import {SobjContainer} from 'react.force.datacontainer';
 
 var styles = StyleSheet.create({
   list: {
-    justifyContent: 'flex-start',
+    justifyContent: 'space-around',
     flexDirection: 'row',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    alignItems: 'flex-start'
   }
 });
 
