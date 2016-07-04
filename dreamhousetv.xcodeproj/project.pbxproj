@@ -19,6 +19,8 @@
 		2DB21DD11D1B13FB003F65E6 /* AppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB21DCC1D1B13FB003F65E6 /* AppConstants.m */; };
 		2DB21DD21D1B13FB003F65E6 /* AuthenticationPersistenceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB21DCE1D1B13FB003F65E6 /* AuthenticationPersistenceUtils.m */; };
 		2DB21DD31D1B13FB003F65E6 /* SFAuthenticationManager+SoapAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB21DD01D1B13FB003F65E6 /* SFAuthenticationManager+SoapAuthentication.m */; };
+		2DB21E0C1D1B4D48003F65E6 /* SFPhoneAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB21E0A1D1B4D48003F65E6 /* SFPhoneAuthenticationViewController.m */; };
+		2DB21E0D1D1B4D48003F65E6 /* SFPhoneAuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DB21E0B1D1B4D48003F65E6 /* SFPhoneAuthenticationViewController.xib */; };
 		2DC782E61D0224FF00E87A30 /* SalesforceDesignSystemIconsAction.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC782DF1D0224FF00E87A30 /* SalesforceDesignSystemIconsAction.ttf */; };
 		2DC782E71D0224FF00E87A30 /* SalesforceDesignSystemIconsCustom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC782E01D0224FF00E87A30 /* SalesforceDesignSystemIconsCustom.ttf */; };
 		2DC782E81D0224FF00E87A30 /* SalesforceDesignSystemIconsStandard.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC782E11D0224FF00E87A30 /* SalesforceDesignSystemIconsStandard.ttf */; };
@@ -26,6 +28,7 @@
 		2DC782EA1D0224FF00E87A30 /* SalesforceSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC782E31D0224FF00E87A30 /* SalesforceSans-Bold.ttf */; };
 		2DC782EB1D0224FF00E87A30 /* SalesforceSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC782E41D0224FF00E87A30 /* SalesforceSans-Light.ttf */; };
 		2DC782EC1D0224FF00E87A30 /* SalesforceSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC782E51D0224FF00E87A30 /* SalesforceSans-Regular.ttf */; };
+		2DCE35AE1D25E2B900E9EB17 /* MultipeerServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCE35AD1D25E2B900E9EB17 /* MultipeerServer.m */; };
 		2DE1549A1D15178500590A64 /* SFSoapAuthenticationViewControllerTV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE154991D15178500590A64 /* SFSoapAuthenticationViewControllerTV.xib */; };
 		2DE8C6641D06045A00009D09 /* libSalesforceBaseTheme.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1D2D131D024BB40065E725 /* libSalesforceBaseTheme.a */; };
 		4F8D5EA31B6C0568005E64D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8D5EA21B6C0568005E64D4 /* main.m */; };
@@ -60,6 +63,9 @@
 		2DB21DCE1D1B13FB003F65E6 /* AuthenticationPersistenceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationPersistenceUtils.m; sourceTree = "<group>"; };
 		2DB21DCF1D1B13FB003F65E6 /* SFAuthenticationManager+SoapAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFAuthenticationManager+SoapAuthentication.h"; sourceTree = "<group>"; };
 		2DB21DD01D1B13FB003F65E6 /* SFAuthenticationManager+SoapAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SFAuthenticationManager+SoapAuthentication.m"; sourceTree = "<group>"; };
+		2DB21E091D1B4D48003F65E6 /* SFPhoneAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPhoneAuthenticationViewController.h; sourceTree = "<group>"; };
+		2DB21E0A1D1B4D48003F65E6 /* SFPhoneAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPhoneAuthenticationViewController.m; sourceTree = "<group>"; };
+		2DB21E0B1D1B4D48003F65E6 /* SFPhoneAuthenticationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFPhoneAuthenticationViewController.xib; sourceTree = "<group>"; };
 		2DC782DF1D0224FF00E87A30 /* SalesforceDesignSystemIconsAction.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SalesforceDesignSystemIconsAction.ttf; path = node_modules/react.force.base.theme/Fonts/SalesforceDesignSystemIconsAction.ttf; sourceTree = "<group>"; };
 		2DC782E01D0224FF00E87A30 /* SalesforceDesignSystemIconsCustom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SalesforceDesignSystemIconsCustom.ttf; path = node_modules/react.force.base.theme/Fonts/SalesforceDesignSystemIconsCustom.ttf; sourceTree = "<group>"; };
 		2DC782E11D0224FF00E87A30 /* SalesforceDesignSystemIconsStandard.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SalesforceDesignSystemIconsStandard.ttf; path = node_modules/react.force.base.theme/Fonts/SalesforceDesignSystemIconsStandard.ttf; sourceTree = "<group>"; };
@@ -67,6 +73,8 @@
 		2DC782E31D0224FF00E87A30 /* SalesforceSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SalesforceSans-Bold.ttf"; path = "node_modules/react.force.base.theme/Fonts/SalesforceSans-Bold.ttf"; sourceTree = "<group>"; };
 		2DC782E41D0224FF00E87A30 /* SalesforceSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SalesforceSans-Light.ttf"; path = "node_modules/react.force.base.theme/Fonts/SalesforceSans-Light.ttf"; sourceTree = "<group>"; };
 		2DC782E51D0224FF00E87A30 /* SalesforceSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SalesforceSans-Regular.ttf"; path = "node_modules/react.force.base.theme/Fonts/SalesforceSans-Regular.ttf"; sourceTree = "<group>"; };
+		2DCE35AC1D25E2B900E9EB17 /* MultipeerServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipeerServer.h; sourceTree = "<group>"; };
+		2DCE35AD1D25E2B900E9EB17 /* MultipeerServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipeerServer.m; sourceTree = "<group>"; };
 		2DE154991D15178500590A64 /* SFSoapAuthenticationViewControllerTV.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFSoapAuthenticationViewControllerTV.xib; sourceTree = "<group>"; };
 		4F8D5E9D1B6C0568005E64D4 /* dreamhouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dreamhouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8D5EA11B6C0568005E64D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -176,6 +184,11 @@
 				2D83F8B51D1460EB00005100 /* SFSoapAuthenticationViewController.h */,
 				2D83F8B61D1460EB00005100 /* SFSoapAuthenticationViewController.m */,
 				2DE154991D15178500590A64 /* SFSoapAuthenticationViewControllerTV.xib */,
+				2DB21E091D1B4D48003F65E6 /* SFPhoneAuthenticationViewController.h */,
+				2DB21E0A1D1B4D48003F65E6 /* SFPhoneAuthenticationViewController.m */,
+				2DB21E0B1D1B4D48003F65E6 /* SFPhoneAuthenticationViewController.xib */,
+				2DCE35AC1D25E2B900E9EB17 /* MultipeerServer.h */,
+				2DCE35AD1D25E2B900E9EB17 /* MultipeerServer.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -327,6 +340,7 @@
 			files = (
 				4F8D5EAE1B6C0568005E64D4 /* Images.xcassets in Resources */,
 				05F7BE311CF4014A00057E91 /* logo.png in Resources */,
+				2DB21E0D1D1B4D48003F65E6 /* SFPhoneAuthenticationViewController.xib in Resources */,
 				2DE1549A1D15178500590A64 /* SFSoapAuthenticationViewControllerTV.xib in Resources */,
 				2DC782E91D0224FF00E87A30 /* SalesforceDesignSystemIconsUtility.ttf in Resources */,
 				2DC782E81D0224FF00E87A30 /* SalesforceDesignSystemIconsStandard.ttf in Resources */,
@@ -419,10 +433,12 @@
 			files = (
 				4F8D5EA61B6C0568005E64D4 /* AppDelegate.m in Sources */,
 				2DB21DD31D1B13FB003F65E6 /* SFAuthenticationManager+SoapAuthentication.m in Sources */,
+				2DB21E0C1D1B4D48003F65E6 /* SFPhoneAuthenticationViewController.m in Sources */,
 				4F8D5EA31B6C0568005E64D4 /* main.m in Sources */,
 				2DB21DD21D1B13FB003F65E6 /* AuthenticationPersistenceUtils.m in Sources */,
 				2D83F8B81D1460EB00005100 /* SFSoapAuthenticationViewController.m in Sources */,
 				4F8D5EC81B6C0F94005E64D4 /* InitialViewController.m in Sources */,
+				2DCE35AE1D25E2B900E9EB17 /* MultipeerServer.m in Sources */,
 				2DB21DD11D1B13FB003F65E6 /* AppConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

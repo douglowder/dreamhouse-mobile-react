@@ -9,6 +9,7 @@
 #import "SFAuthenticationManager+SoapAuthentication.h"
 #import "AuthenticationPersistenceUtils.h"
 #import "SFSoapAuthenticationViewController.h"
+#import "SFPhoneAuthenticationViewController.h"
 #import "AppDelegate.h"
 
 @implementation SFAuthenticationManager(SoapAuthentication)
@@ -31,7 +32,7 @@
     }
     
 #if TARGET_OS_TV
-    SFSoapAuthenticationViewController *vc = [[SFSoapAuthenticationViewController alloc] initWithNibName:@"SFSoapAuthenticationViewControllerTV" bundle:nil];
+    SFPhoneAuthenticationViewController *vc = [[SFPhoneAuthenticationViewController alloc] initWithNibName:@"SFPhoneAuthenticationViewController" bundle:nil];
 #else
     SFSoapAuthenticationViewController *vc = [[SFSoapAuthenticationViewController alloc] initWithNibName:@"SFSoapAuthenticationViewController" bundle:nil];
 #endif
