@@ -29,10 +29,12 @@
         [AuthenticationPersistenceUtils initializeAppWithCredentials:credentials];
         SFOAuthInfo *info = [[SFOAuthInfo alloc] initWithAuthType:SFOAuthTypeUnknown];
         completionBlock(info);
+        return YES;
     }
     
 #if TARGET_OS_TV
-    SFPhoneAuthenticationViewController *vc = [[SFPhoneAuthenticationViewController alloc] initWithNibName:@"SFPhoneAuthenticationViewController" bundle:nil];
+    //SFPhoneAuthenticationViewController *vc = [[SFPhoneAuthenticationViewController alloc] initWithNibName:@"SFPhoneAuthenticationViewController" bundle:nil];
+    SFSoapAuthenticationViewController *vc = [[SFSoapAuthenticationViewController alloc] initWithNibName:@"SFSoapAuthenticationViewControllerTV" bundle:nil];
 #else
     SFSoapAuthenticationViewController *vc = [[SFSoapAuthenticationViewController alloc] initWithNibName:@"SFSoapAuthenticationViewController" bundle:nil];
 #endif

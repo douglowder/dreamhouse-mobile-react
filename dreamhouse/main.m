@@ -24,8 +24,15 @@
 
 #import <UIKit/UIKit.h>
 
+void uncaughtExceptionHandler(NSException *exception) {
+    NSLog(@"%s %@", __PRETTY_FUNCTION__, [[exception callStackSymbols] description]);
+}
+
+
 int main(int argc, char *argv[])
 {
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    
     @autoreleasepool {
         int retVal = UIApplicationMain(argc, argv, @"SFApplication", @"AppDelegate");
         return retVal;

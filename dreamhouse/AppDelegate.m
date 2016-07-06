@@ -82,14 +82,8 @@
     return self;
 }
 
-void uncaughtExceptionHandler(NSException *exception) {
-    NSLog(@"%s %@", __PRETTY_FUNCTION__, [[exception callStackSymbols] description]);
-}
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
-    
     self.launchOptions = launchOptions;
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self initializeAppViewState];
