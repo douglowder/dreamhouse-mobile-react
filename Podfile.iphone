@@ -9,6 +9,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 pod 'React', :path => './node_modules/react-native', :subspecs => [
   'Core',
+  'CSSLayout',
   'RCTImage',
   'RCTNetwork',
   'RCTText',
